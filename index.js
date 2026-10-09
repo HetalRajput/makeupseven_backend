@@ -39,6 +39,10 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // --------------------------------------
 // ROUTES
 // --------------------------------------
+app.get('/', (req, res) => {
+    res.send('welcome makeupseven ');
+});
+
 app.use('/users', users);
 app.use('/categories', categories);
 app.use('/products', products);
